@@ -1,4 +1,4 @@
-import { Box, Container } from "@mui/material";
+import { Container, Stack } from "@mui/material";
 
 const Navbar = () => {
   return (
@@ -9,7 +9,9 @@ const Navbar = () => {
         padding: { md: "40px 0  10px 0 !important" },
       }}
     >
-      1
+      <Stack direction={"row"} justifyContent={"space-between"}>
+        1
+      </Stack>
     </Container>
   );
 };
