@@ -15,6 +15,6 @@ export const LandingBestProductSeller: I_SectionsTitltes = {
   subText: "See all colection",
 };
 export const LandingImageBoxes: I_SectionsTitltes = {
-  mainTitle: "",
-  subText: "",
+  mainTitle: "Interior Plant Reference",
+  subText: "make your home so comfortable with refreshing plants",
 };

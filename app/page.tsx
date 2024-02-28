@@ -4,6 +4,7 @@ import Header from "./Header/Header";
 import { Container, createTheme } from "@mui/material";
 import Services from "./ServicesComp/Services";
 import BestProductSeller from "./BestProductSeller/BestProductSeller";
+import ImageBoxes from "./ImageBoxes/ImageBoxes";
 
 export const theme = createTheme({
   palette: {
@@ -27,6 +28,7 @@ export default function Home() {
       >
         <Services />
         <BestProductSeller />
+        <ImageBoxes />
       </Container>
     </ThemeProvider>
   );

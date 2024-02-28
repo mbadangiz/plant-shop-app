@@ -27,7 +27,7 @@ export function BPSleft() {
         display: "flex",
         justifyContent: "space-evenly",
         flexWrap: "wrap",
-        gap: "20px",
+        gap: { xs: "50px", md: "20px" },
       }}
     >
       {productsList.map((item) => {
