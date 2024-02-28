@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Work_Sans } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const wrkSans = Work_Sans({ subsets: ["latin"] });
 
-const interInter200 = Inter({
+const wrkSans200 = Work_Sans({
   subsets: ["latin"],
   variable: "--font-Inter200",
   weight: ["300"],
@@ -22,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} ${interInter200.variable}`}>
+      <body className={`${wrkSans.className} ${wrkSans200.variable}`}>
         {children}
       </body>
     </html>

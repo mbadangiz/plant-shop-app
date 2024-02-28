@@ -1,3 +1,7 @@
+interface I_SectionsTitltes {
+  mainTitle: string;
+  subText: string;
+}
 export const LandingHeaders: {
   headerMainText: string;
   headerSecndText: string;
@@ -6,8 +10,11 @@ export const LandingHeaders: {
   headerSecndText:
     "find your dream plant for you home decoration with us, and we will make it happen.",
 };
-export const LandingBestProductSeller: { mainTitle: string; subText: string } =
-  {
-    mainTitle: "Best Seller Product",
-    subText: "See all colection",
-  };
+export const LandingBestProductSeller: I_SectionsTitltes = {
+  mainTitle: "Best Seller Product",
+  subText: "See all colection",
+};
+export const LandingImageBoxes: I_SectionsTitltes = {
+  mainTitle: "",
+  subText: "",
+};
