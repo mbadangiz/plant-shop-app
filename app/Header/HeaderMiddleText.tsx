@@ -22,7 +22,7 @@ export function HeaderMiddleText() {
           width: { lg: "1000px" },
         }}
       >
-        {LandingHeaders.headerMainText}
+        {LandingHeaders.mainTitle}
       </Typography>
       <Box
         textAlign={"center"}
@@ -34,7 +34,7 @@ export function HeaderMiddleText() {
           width: { xs: "270px", md: "330px", lg: "400px" },
         }}
       >
-        {LandingHeaders.headerSecndText}
+        {LandingHeaders.subText}
       </Box>
     </Stack>
   );

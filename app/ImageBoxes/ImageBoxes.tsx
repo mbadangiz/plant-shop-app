@@ -84,8 +84,8 @@ function ImageBoxesCards({
         borderRadius={"inherit"}
         fontWeight={300}
         fontSize={40}
-        className="transition-[top]  
-        bg-black/50 backdrop-blur-sm 
+        className="transition-all duration-500
+        bg-black/50 backdrop-blur-sm  
         absolute top-[100%] group-hover:top-[0%] 
         "
       >
