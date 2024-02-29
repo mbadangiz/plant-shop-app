@@ -1,23 +1,13 @@
-"use client";
-import { ThemeProvider } from "@emotion/react";
-import Header from "./Header/Header";
-import { Container, createTheme } from "@mui/material";
-import Services from "./ServicesComp/Services";
+import { Container } from "@mui/material";
 import BestProductSeller from "./BestProductSeller/BestProductSeller";
+import Header from "./Header/Header";
 import ImageBoxes from "./ImageBoxes/ImageBoxes";
-
-export const theme = createTheme({
-  palette: {
-    primary: {
-      main: "#009EFD",
-      light: "#fff",
-    },
-  },
-});
+import Services from "./ServicesComp/Services";
+import MyCustomTheme from "./MyCustomTheme";
 
 export default function Home() {
   return (
-    <ThemeProvider theme={theme}>
+    <MyCustomTheme>
       <Header />
       <Container
         maxWidth="lg"
@@ -30,6 +20,6 @@ export default function Home() {
         <BestProductSeller />
         <ImageBoxes />
       </Container>
-    </ThemeProvider>
+    </MyCustomTheme>
   );
 }

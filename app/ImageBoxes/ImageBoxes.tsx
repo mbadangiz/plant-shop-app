@@ -40,7 +40,7 @@ const ImageBoxes = () => {
         }}
       >
         {imageList.map((items) => {
-          return <ImageBoxesCards data={items} />;
+          return <ImageBoxesCards key={items.gridsyslabel} data={items} />;
         })}
       </Grid>
     </Box>

@@ -3,9 +3,12 @@ import BtnSearch from "@/public/Icons/btn-search.png";
 import Image from "next/image";
 
 export function HeaderInputContainer() {
+  const additionalProps = {
+    placeholder: "Search Plant...",
+  };
   return (
     <CustomInput
-      placeholder="Search Plant..."
+      {...additionalProps}
       icon={
         <Image
           src={BtnSearch}

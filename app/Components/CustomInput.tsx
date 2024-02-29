@@ -1,6 +1,7 @@
+"use client";
 import { Box, InputBase } from "@mui/material";
 import { ReactNode } from "react";
-import { theme } from "../page";
+import { theme } from "../MyCustomTheme";
 
 const CustomInput = ({ icon, ...rest }: { icon?: ReactNode }) => {
   return (

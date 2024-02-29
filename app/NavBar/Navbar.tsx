@@ -1,7 +1,8 @@
+"use client";
 import { LocalMall } from "@mui/icons-material";
 import { Badge, Box, Stack, Typography } from "@mui/material";
 import Image from "next/image";
-import { theme } from "../page";
+import { theme } from "../MyCustomTheme";
 import LogoCompany from "@/public/Icons/SiteIcon.png";
 import NavBarResMenu from "./NavBarResMenu";
 
