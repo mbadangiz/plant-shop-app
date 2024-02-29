@@ -5,6 +5,7 @@ import ImageBoxes from "./ImageBoxes/ImageBoxes";
 import Services from "./ServicesComp/Services";
 import MyCustomTheme from "./MyCustomTheme";
 import PlanetsCareSection from "./PlanetsCareSection/PlanetsCareSection";
+import Footer from "./Footer/Footer";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
         <ImageBoxes />
         <PlanetsCareSection />
       </Container>
+      <Footer />
     </MyCustomTheme>
   );
 }

@@ -17,3 +17,8 @@ export const LandingPlantsCare: I_SectionsTitltes = {
   mainTitle: "How to care for plants",
   subText: "Take care of plants with all your heart",
 };
+
+export const LandingFooterSiteSettings: { address: string; email: string } = {
+  address: "JL. Setiabudhi No. 193 Sukasari, Bandung West Java, Indonesia",
+  email: "hallo@daunku.com",
+};

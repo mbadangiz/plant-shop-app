@@ -16,10 +16,7 @@ export function ServicesCards({
     >
       <Image src={image} alt="title" className="w-10 lg:w-16" />
       <Box
-        width={{
-          xs: "200px",
-          lg: "300px",
-        }}
+        width={300}
         mt={{ md: 2 }}
         sx={{ textAlign: { xs: "center", lg: "left" } }}
       >
