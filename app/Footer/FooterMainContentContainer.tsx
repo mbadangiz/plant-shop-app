@@ -17,13 +17,13 @@ export function FooterMainContentContainer() {
     <Stack width={{ xs: "100%", md: "60%" }} direction={"row"} gap={6}>
       {Properties.map((items) => {
         return (
-          <Box minWidth={"100px"}>
+          <Box minWidth={"100px"} key={items}>
             <Typography variant="body1" fontSize={18} fontWeight={600}>
               {items.replaceAll("_", " ")}
             </Typography>
             {footerMainContentList[items].map((list) => {
               return (
-                <Typography variant="body1" fontSize={14}>
+                <Typography key={list} variant="body1" fontSize={14}>
                   {list}
                 </Typography>
               );
