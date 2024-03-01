@@ -1,32 +1,36 @@
-import { Box } from "@mui/material";
+import { Box, Stack, Typography } from "@mui/material";
 import { LandingFooterSiteSettings } from "../AppText";
-import { Key } from "@mui/icons-material";
+
 const footerMainContentList: {
-  Support: string[];
-  Useful_Link: string[];
-  Our_Menu: string[];
-  Address: string[];
+  [key: string]: string[];
 } = {
-  Address: [LandingFooterSiteSettings.address, LandingFooterSiteSettings.email],
-  Our_Menu: ["Best Product", "Category"],
-  Useful_Link: ["Payment & Tax", "Team of service", "Privaci Policy"],
   Support: ["About Us", "Careers", "Blog"],
+  Useful_Link: ["Payment & Tax", "Team of service", "Privaci Policy"],
+  Our_Menu: ["Best Product", "Category"],
+  Address: [LandingFooterSiteSettings.address, LandingFooterSiteSettings.email],
 };
 
 export function FooterMainContentContainer() {
+  const Properties = Object.keys(footerMainContentList);
+
   return (
-    <Box width={{ xs: "100%", md: "60%" }}>
-      {Object.keys(footerMainContentList).map((key: any) => {
+    <Stack width={{ xs: "100%", md: "60%" }} direction={"row"} gap={6}>
+      {Properties.map((items) => {
         return (
-          <Box>
-            {key.replaceAll("_", " ")},{footerMainContentList[key]}
+          <Box minWidth={"100px"}>
+            <Typography variant="body1" fontSize={18} fontWeight={600}>
+              {items.replaceAll("_", " ")}
+            </Typography>
+            {footerMainContentList[items].map((list) => {
+              return (
+                <Typography variant="body1" fontSize={14}>
+                  {list}
+                </Typography>
+              );
+            })}
           </Box>
         );
       })}
-    </Box>
+    </Stack>
   );
 }
-
-// function Content() {
-
-// }}
