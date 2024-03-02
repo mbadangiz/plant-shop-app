@@ -14,16 +14,27 @@ export function FooterMainContentContainer() {
   const Properties = Object.keys(footerMainContentList);
 
   return (
-    <Stack width={{ xs: "100%", md: "60%" }} direction={"row"} gap={6}>
+    <Stack
+      width={{ xs: "100%", md: "60%" }}
+      direction={"row"}
+      gap={{ xs: 4, md: 6 }}
+      flexWrap={{ xs: "wrap", md: "nowrap" }}
+    >
       {Properties.map((items) => {
         return (
-          <Box minWidth={"100px"} key={items}>
+          <Box minWidth={"120px"} key={items}>
             <Typography variant="body1" fontSize={18} fontWeight={600}>
               {items.replaceAll("_", " ")}
             </Typography>
             {footerMainContentList[items].map((list) => {
               return (
-                <Typography key={list} variant="body1" fontSize={14}>
+                <Typography
+                  key={list}
+                  variant="body2"
+                  fontWeight={100}
+                  fontSize={13}
+                  mt={2}
+                >
                   {list}
                 </Typography>
               );
